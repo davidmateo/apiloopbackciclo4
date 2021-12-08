@@ -11,40 +11,40 @@ export class Vuelos extends Entity {
   id?: string;
 
   @property({
-    type: 'Date',
+    type: 'String',
     required: true,
   })
-  fecha_inicio: Date;
+  fecha_inicio: string;
 
   @property({
-    type: 'Date',
+    type: 'string',
     required: true,
   })
-  hora_inicio: Date;
+  hora_inicio: string;
 
   @property({
-    type: 'Date',
+    type: 'string',
     required: true,
   })
-  fecha_fin: Date;
+  fecha_fin: string;
 
   @property({
-    type: 'Date',
+    type: 'string',
     required: true,
   })
-  hora_fin: Date;
+  hora_fin: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
   })
-  asientos: number;
+  asientos: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
   })
-  vendidos: number;
+  vendidos: string;
 
   @property({
     type: 'string',

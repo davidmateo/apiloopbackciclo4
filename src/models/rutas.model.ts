@@ -10,10 +10,10 @@ export class Rutas extends Entity {
   })
   id?: string;
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
   })
-  tiempo_estimado: number;
+  tiempo_estimado: string;
 
   @belongsTo(() => Aeropuertos, {name: 'origenfk'})
   origen: string;
