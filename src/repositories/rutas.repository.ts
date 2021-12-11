@@ -26,9 +26,5 @@ export class RutasRepository extends DefaultCrudRepository<
     this.registerInclusionResolver('destinofk', this.destinofk.inclusionResolver);
     this.origenfk = this.createBelongsToAccessorFor('origenfk', aeropuertosRepositoryGetter,);
     this.registerInclusionResolver('origenfk', this.origenfk.inclusionResolver);
-    this.origen_aeropuerto = this.createBelongsToAccessorFor('origen_aeropuerto', aeropuertosRepositoryGetter,);
-    this.registerInclusionResolver('origen_aeropuerto', this.origen_aeropuerto.inclusionResolver);
-    this.Origen_aeropuerto = this.createBelongsToAccessorFor('Origen_aeropuerto', aeropuertosRepositoryGetter,);
-    this.registerInclusionResolver('Origen_aeropuerto', this.Origen_aeropuerto.inclusionResolver);
   }
 }

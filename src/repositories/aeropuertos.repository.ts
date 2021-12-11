@@ -13,10 +13,8 @@ export class AeropuertosRepository extends DefaultCrudRepository<
   public readonly destino_aeropuerto: BelongsToAccessor<Rutas, typeof Aeropuertos.prototype.id>;
 
   constructor(
-    @inject('datasources.mongo') dataSource: MongoDataSource, @repository.getter('RutasRepository') protected rutasRepositoryGetter: Getter<RutasRepository>,
+    @inject('datasources.mongo') dataSource: MongoDataSource
   ) {
     super(Aeropuertos, dataSource);
-    this.destino_aeropuerto = this.createBelongsToAccessorFor('destino_aeropuerto', rutasRepositoryGetter,);
-    this.registerInclusionResolver('destino_aeropuerto', this.destino_aeropuerto.inclusionResolver);
   }
 }
